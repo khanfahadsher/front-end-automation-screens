@@ -15,4 +15,10 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
+  build: {
+    outDir: 'dist',
+    assetsInlineLimit: 0 // Ensure assets are properly handled
+  },
+  base: './' // Important for Netlify deployments
+
 })
